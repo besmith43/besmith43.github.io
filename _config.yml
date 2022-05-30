@@ -23,7 +23,7 @@ timezone: America/Chicago
 
 title: BS Tech Blog # the main title
 
-tagline: tech antics of a university IT guy # it will display as the sub-title
+tagline: playing with electrified rocks for fun # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   this blog is to document the various technologies that I've used as well as a general collection of knowledge that I've collected around the industry
