@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Functions and Classes
 date: 2020-02-19 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### Functions

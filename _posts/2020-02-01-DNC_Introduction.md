@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Introduction to .Net Core Programming
 date: 2020-02-01 08:00:00 +0900
-category: c#
+categories: [ c# ]
+tags: [  ]
 ---
 
 #### What is .Net Core

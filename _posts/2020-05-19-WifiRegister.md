@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Wifi Register
 date: 2020-05-19 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### Problem

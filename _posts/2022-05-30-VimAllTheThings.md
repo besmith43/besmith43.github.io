@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Vim All the Things
 date: 2025-05-30 08:00:00 +0900
-category: vim
+categories: [ vim ]
+tags: [  ]
 ---
 
 #### What is Vim?

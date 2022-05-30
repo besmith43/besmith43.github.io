@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Learning the Basics of Python
 date: 2020-02-15 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### What is the Goal of Programming

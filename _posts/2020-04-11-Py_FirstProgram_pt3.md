@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: First Python Program Part 3
 date: 2020-04-11 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### Reorganization

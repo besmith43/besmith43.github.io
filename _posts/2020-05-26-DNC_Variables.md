@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Variables in .Net Core
 date: 2020-05-26 08:00:00 +0900
-category: c#
+categories: [ c# ]
+tags: [  ]
 ---
 
 #### What are Variables?

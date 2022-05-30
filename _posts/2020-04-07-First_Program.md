@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: First Python Program
 date: 2020-04-07 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### Goal

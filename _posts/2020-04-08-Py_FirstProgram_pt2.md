@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: First Python Program Part 2
 date: 2020-04-08 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### Arguments

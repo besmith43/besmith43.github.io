@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: First Python Program Part 4
 date: 2020-04-12 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [ pyinstaller ]
 ---
 
 #### Distribution

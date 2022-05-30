@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Building Custom Profiles
 date: 2020-02-01 08:00:00 +0900
-category: powershell
+categories: [ powershell ]
+tags: [  ]
 ---
 
 #### What is PowerShell

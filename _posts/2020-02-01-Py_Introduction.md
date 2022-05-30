@@ -1,8 +1,8 @@
 ﻿---
-layout: post
 title: Introduction to Python Programming
 date: 2020-02-01 08:00:00 +0900
-category: python
+categories: [ python ]
+tags: [  ]
 ---
 
 #### What is Python
