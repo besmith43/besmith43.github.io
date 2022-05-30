@@ -47,6 +47,5 @@ print()
         
 [Github Repo](https://github.com/besmith43/Py_FirstProgramPt2)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oi-IuaetgY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 

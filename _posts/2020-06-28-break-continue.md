@@ -89,5 +89,4 @@ namespace DNC_Break_Continue
 [GitHub Repo](https://github.com/besmith43/DNC_Break-Continue)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wP5QKOhaSco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

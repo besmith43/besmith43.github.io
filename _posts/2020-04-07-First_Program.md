@@ -34,5 +34,4 @@ print()
 [Github Repo](https://github.com/besmith43/Py_FirstProgramPt1)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0_PVLp8FoX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

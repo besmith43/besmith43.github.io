@@ -67,6 +67,5 @@ namespace DNC_Functions
 [Github Repo](https://github.com/besmith43/DNC_Functions)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/haVjgYN8wsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 

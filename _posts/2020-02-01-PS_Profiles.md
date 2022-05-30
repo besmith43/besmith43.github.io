@@ -11,7 +11,7 @@ PowerShell started life as a Windows native alternative to bash or unix shell.  
 #### Where to Place the Profile
 With there being 2 different versions of PowerShell and it being available on at least 3 different operating systems, file placement is paramount to getting things to work as expected.  With version 5 (the Windows only version), the profile needs to be placed at **~\Documents\WindowsPowerShell** with the name of **Profile.ps1**.  While the Core version needs to be placed at different places depending on the operating system.  Because of this I use the PowerShell profile variable of **$profile** to allow PowerShell to place the file where ever it needs to go for the platform I\'m on at the moment like so.
 
-```
+```powershell
 if (!(test-path -itemtype file -path $profile))
 {
     new-item $profile -force

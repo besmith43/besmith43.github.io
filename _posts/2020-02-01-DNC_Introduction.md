@@ -15,4 +15,3 @@ As previously stated, .Net Core is designed and supported by Microsoft to bring 
 It can be downloaded by going to [Mircosoft](https://dotnet.microsoft.com/download/dotnet-core) directly, or their [Github](https://github.com/dotnet/core) page.  Once it\'s downloaded, simply run the installer and you\'re ready to go.  If you are on Linux, I suggest adding the repository if possible so that you are always on the latest version.  Instructions for this process can be found [here](https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-1904).
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/taJ2eRTm3ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
