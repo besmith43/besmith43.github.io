@@ -10,7 +10,7 @@ The internet has become and important part of modern life, and with that comes t
 
 #### Proof of Concept
 So let\'s look at how Windows manages wifi profiles.  This can be seen using the command line.  So pull up an administrative console, and run the following command: **netsh wlan show profiles**.  
-![an image]({{ site.baseurl }}/static/img/py-netsh-show-profiles.png)  
+![an image]({{ site.baseurl }}/assets/img/py-netsh-show-profiles.png)  
 For my laptop, it only has my home network so that makes it pretty simple.  Now I just need to export it to a file with the following command: **netsh wlan export profile \"NERD HOUSE_5G\" key=clear folder=C:\\**.  This will put an xml file at the root of your C drive, and this xml file contains all the information for your wifi connection that Windows stores.  Now that we\'ve exported it, we\'ll need to add the contents of this file to a python script so that it can write that data to a file, then call CMD or powershell to import it onto another computer.  To do this, we\'ll need to start a new python file with a shebang, an import statement for the os library, and the open function to create a new file of a given name in write mode.
 
 ```python

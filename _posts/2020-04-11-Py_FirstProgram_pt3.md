@@ -120,7 +120,7 @@ from tkinter.ttk import *
 #### Conclusion
 Now we have an application that when run with the following command: **.\dice.py -g** will give us the the below application.  However we can still use the command line functionality without all the need for the gui if we so chose.  From here, you have the ability to build next to any application that you can imagine.  There\'s many more topics to discuss, but these are all the basic tools that you need to be productive.  Enjoy your new found powers and play responsibly. 
 
-![image]({{ site.baseurl }}/static/img/py-firstprogram_pt3-conclusion.png)
+![image]({{ site.baseurl }}/assets/img/py-firstprogram_pt3-conclusion.png)
 
 
 #### -- dice.py --
