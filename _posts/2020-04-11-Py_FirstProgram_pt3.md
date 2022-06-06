@@ -6,6 +6,7 @@ tags: [  ]
 ---
 
 #### Reorganization
+
 In this third part, we\'re going to add a graphic user interface option.  This is where things will leave the command line and start looking like applications that most people are accustomed to.  So to start we\'re going to reorganize the code.  This is done for 2 reasons.  The first is readability and maintainability.  This may sound like 2 different things, but as your projects get larger and larger, you\'ll find that they become very much the same thing.  Ultimately what we\'re looking for is a balance between performance, and simplicity.  As you try to optimize projects for performance, it tends to get harder to understand what is actually going on and why.  Therefore we need to make sure that code remains readable so that we can reason through what is the goal that is being accomplished and how is the code going about reaching that goal.  The second reason why we need to reorganize the code base is that we don\'t want to lose any functionality, but we don\'t want to needlessly waste time calling code that won\'t get run.
 
 So first things first.  How do we start reorganizing the code?  I tend to start by looking at what I want to do, and the basic structure that the application needs to run through.  This is case our application will have 2 distinct paths.  The first is the command line option that we\'ve already done.  The second is the graphical user interface or gui that we want to add to it.  Now both paths will still need to call our random number generator code, and we\'ll want to same options for both, so we\'ll need to add an additional command line option for rolling multiple of the same kind of dice, and one for chosing the gui option.
@@ -45,6 +46,7 @@ else:
 ```
 
 #### Graphical User Interface
+
 GUI\'s are the primary way that we interface with our computers.  Fortunately for use there is one that comes with python that is a great primer for getting used to programming gui applications.  There are basic components called widgets that we can use to fill the window.  Some of these widgets are things like Labels, SpinBoxes, Progress Bars, and Text Boxes.  The library that we\'ll be using is called TKinter.  It is a Python only library, but it works on all platforms that Python runs on.
 
 To get started with actually building a gui application, we\'ll need to import the library and use 2 lines of code to get a basic blank gui.  That code looks like this.
@@ -118,12 +120,13 @@ from tkinter.ttk import *
 ```
 
 #### Conclusion
+
 Now we have an application that when run with the following command: **.\dice.py -g** will give us the the below application.  However we can still use the command line functionality without all the need for the gui if we so chose.  From here, you have the ability to build next to any application that you can imagine.  There\'s many more topics to discuss, but these are all the basic tools that you need to be productive.  Enjoy your new found powers and play responsibly. 
 
 ![image]({{ site.baseurl }}/assets/img/py-firstprogram_pt3-conclusion.png)
 
-
 #### -- dice.py --
+
 ```python
 #!/usr/bin/env python3
 
@@ -218,8 +221,5 @@ else:
     
 ```
 
-
 [Github Repo](https://github.com/besmith43/Py_FirstProgramPt3)
-
-
 

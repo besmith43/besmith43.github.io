@@ -6,9 +6,11 @@ tags: [  ]
 ---
 
 #### Branching
+
 What is branching?  Basically it is the name give to the broad classification of operations that a computer uses to make decisions.  Because a computer can really only move where data is stored and arithmetic, branching is decision making through arithematic.  Essentially the computer takes 2 pieces of data, say for example 3 and 5, and subtracts 3 from 5.  Then it looks a some special flags based on the result, and finally choices to go down path A or path B.
 
 #### If/Else
+
 In dotnet core and most programming languages, there are a few basic keywords to be familiar with for most decision making needs.  The first and maybe the most used is If/Else.  This does exactly what you would expect.  If the statement is true, do what is within the If block, but if the statement is false, do what is within the else block.  Let\'s take a look at a simple example.
 
 ```c#
@@ -47,6 +49,7 @@ else
 Here we\'re seeing a code snippet that when executed will output **3 is less than 5**, because it again entered the first if statement.  It will do this everytime because 3 will always be less than 5 and that comparison will happen before the other 2 are checked.  It is suggested to always have an else, but it is not mandatory.  You can also use as many else if\'s as you need to take care of the decision tree that you need to.  It is also acceptible to embed if\'s within if\'s.  However I would be careful as you want to make sure that you keep your code easy to reason through.
 
 #### Switch
+
 Much like If/Else, switch statements are effectively a specific If/Else decision tree.  With a switch, it is given a single variable, and then depending on the value stored within that variable, a particular code block is selected, and if it is not any of the specific options, it is good coding practice to have a default code block.  This default is the switch equivalent of an else statement.  Each code block is ended with a break keyword.  This keyword can be used in any code block to stop the flow of execution of that code block.  We\'ll discuss this further in a later post.
 
 ```c#
@@ -67,6 +70,7 @@ switch (choice)
 ```
 
 #### While Loops
+
 While loops ae pretty simple but incredibly useful.  At the top of the loop is a condition check, then the block of code to be run as long as that condition is true.  Let\'s take a look at one.
 
 ```c#
@@ -92,6 +96,7 @@ do
 ```
 
 #### For Loops
+
 For loops are a concise way to interate a defined number of times.  Like with the previous while loop examples, there is a defined format to be followed.  It works by declaring a new variable, then setting the truth condition, and then the modification operation that needs to happen between each loop.  Seeing is simpler than explaining.
 
 ```c#
@@ -102,6 +107,7 @@ for(int i = 0; i < 5; i++)
 ```
 
 #### Foreach
+
 Up to this point all of the different loop examples have done the same thing.  They\'ve outputed a sentence 5 times with the current count.  A ForEach loop can do this same thing but in a fundamentally different way.  Before we had a variable keeping up with a count that got updated at the end of each loop.  However a ForEach loop, it will iterate over a collection of items.  An example of this would be to have an array of items, and perform the instructions given in the code block on each of them.  This can be a handy way to work with a a collection of items in a unified fashion.
 
 ```c#
@@ -114,10 +120,11 @@ foreach (number in numbers)
 ```
 
 #### Conclusion
+
 This is an introductory list of some of the most commonly used branching instructions used in programming.  Keep in mind that all of them can be used interchangably, but they are each geared differently.  I encourage you to play with each of them and get familiar with them.
 
-
 #### -- Program.cs --
+
 ```c#
 using System;
 
@@ -204,8 +211,5 @@ namespace DNC_Branching
 }
 ```
 
-      
 [Github Repo](https://github.com/besmith43/DNC_Branching)
-
-
 

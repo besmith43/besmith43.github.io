@@ -6,6 +6,7 @@ tags: [  ]
 ---
 
 #### Functions
+
 Programming can be oversimplified by saying that it is organizing repetative tasks that manipluate data into small containers.  This is the point of abstractions.  This particular example of abstractions is what we call a function.  In Python, the keyword for declaring a function definition is "def", followed by the name of the function, parentheses, and ending with a colon.  Inside the parentheses, you can put an unlimited number of parameters.  These parameters are bits of data that your function will perform operations on.  You also have the ability to return one value back from a function with a "return" statement.  One question that you may be asking yourself, is what go through all of this work?  Why segment instructions so that you can\'t start at the beginning and work through to the end sequentially?  The answer is both easy and difficult to answer.  The short answer is that you may have the same instructions lined up the same way to perform the same task on different data multiple places in the code.  If you find a bug or need to change some of these instructions later on, would you prefer to find each occurance of that code to make the same modification, or go to a function definition and modify it once?  The lazy among you will go with option 2 immediately, and the rest should get used to that idea as well.  The reason being is that in large code bases (this being defined in some cases and millions of lines of code) finding and modifying each and every reoccurance of what should be a function can be an impossible task.  This is part of a design paradigm in programming called "Dry Programming".  The base idea is that your code base is structured such that code blocks are only written once.  But that\'s enough explaination, let\'s see some example code.
 
 ```python
@@ -32,6 +33,7 @@ f = add(d, e)
 Note firstly that the variable names used in the declaration don\'t need to be the same as the variables passed in when the function is called.  The only thing that matters is that the type of data is correct for the operations that a function needs to perform.  This is something that we\'ve seen a little of before, but will get deeper into at a later date.
 
 #### Classes
+
 Classes are the next level of organization.  They are a method of controlling access to data and functions so that not everything can modify data or call functions that should only be used in particular circumstances.  To define classes, it follows the same rules as a function in terms of white space rules.  However using them is a little different.  With classes, you need to make an instance of it.  That instance has it\'s own data, and you can make multiple instances of the class with different data in each.  For example, we can have a class of person.  Each instance of person has a first and last name, and an age.  However the data stored in each instance of person is different just like every real person doesn\'t have the same name and isn\'t the same age.  Let\'s see how this class definition looks in Python code.
 
 ```python
@@ -73,6 +75,7 @@ def getAge(self):
 ```
 	
 #### --classes.py--
+
 ```python
 # defining the class named Person
 # it has 3 parameters that each instance of the class will need
@@ -108,6 +111,7 @@ except:
 ```
 
 #### --functions.py--
+
 ```python
 # define function add
 # parameters are a, and b.  They are assumed to be numbers
@@ -130,9 +134,5 @@ f = add(d, e)
 print(f)
 ```
 
-	
 [Github Repo](https://github.com/besmith43/Py_FunctionsAndClasses)
-
-
-
 

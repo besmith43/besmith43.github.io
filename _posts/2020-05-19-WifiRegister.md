@@ -6,9 +6,11 @@ tags: [  ]
 ---
 
 #### Problem
+
 The internet has become and important part of modern life, and with that comes the persistent question from house guests: "What\'s the wifi password?"  It can be annoying both as the host and the guest.  Now some people will simply post their wifi password within sight of the door so that there\'s no need to ask.  However let\'s see what programming can do for us?
 
 #### Proof of Concept
+
 So let\'s look at how Windows manages wifi profiles.  This can be seen using the command line.  So pull up an administrative console, and run the following command: **netsh wlan show profiles**.  
 ![an image]({{ site.baseurl }}/assets/img/py-netsh-show-profiles.png)  
 For my laptop, it only has my home network so that makes it pretty simple.  Now I just need to export it to a file with the following command: **netsh wlan export profile \"NERD HOUSE_5G\" key=clear folder=C:\\**.  This will put an xml file at the root of your C drive, and this xml file contains all the information for your wifi connection that Windows stores.  Now that we\'ve exported it, we\'ll need to add the contents of this file to a python script so that it can write that data to a file, then call CMD or powershell to import it onto another computer.  To do this, we\'ll need to start a new python file with a shebang, an import statement for the os library, and the open function to create a new file of a given name in write mode.
@@ -32,9 +34,11 @@ os.remove("home-wifi.xml")
 So how does this code work?  We know what it is supposed to do, but let\'s break it down a bit.  We\'re storing the current working directory, or cwd, into the variable cur_path.  It\'s done by calling the os library module and using one of its functions called getcwd().  Then we\'ll use the os module again but call the system function.  This function is how we interact with the host operating system.  In this case, we\'re calling powershell, and telling it to run the command **netsh wlan add profile**.  The plus sign in this instantance isn\'t performing arithmetic addition but instead it\'s performing string concatentation.  So what\'s a string you may be asking?  Well it is a type of data that is a series of characters.  It also doesn\'t have a specific length.  Finally after powershell finishes running, the next line of code will execute.  In this case, that is the os module deleting the home-wifi.xml file that we spent so much time working with already.
 
 #### Solution
+
 Now that we have a functional proof of concept for Windows, how about MacOS or Linux?  Also how are we going to package this so that we can give something simple to our guests?  Well, let\'s start off by making everything we\'ve done so far a part of a function called **def Run_Windows():**.  Then we\'ll have to figure out how to do the same for MacOS and Linux, but also how do we have python check which platform we\'re on?
         
 #### MacOS
+
 For MacOS, we need to make a bash script by calling **file = open("home-wifi.sh","w")**, and fill it with the following.
 
 ```bash
@@ -62,6 +66,7 @@ os.remove("home-wifi.sh")
 The new bits here are things like making it executable, and how we\'re running the command.  Where with windows, we used powershell to run the command.  In MacOS, we are using the shebang to have MacOS determine to run our script through bash, or the bourne again shell.
 
 #### Linux
+
 For Linux, we\'ll be doing the same thing, but changing the command used in the bash script.
 
 ```bash
@@ -73,6 +78,7 @@ iwconfig wlan0 essid NETWORK_NAME key WIRELESS_KEY
 For this command, NETWORK_NAME is the name of your wifi, and WIRELESS_KEY is the password.
 
 #### Determining What is the Current Operating System
+
 So to determine, what the current operating system python is running on, we\'ll need the sys module.  Specifically the platform function of the sys library.  We\'ll use the below code block to run the correct function.
 
 ```python
@@ -91,9 +97,11 @@ else:
 ```
 
 #### Conclusion
+
 Finally, we need to use pyinstaller to make the script into an executable.  Now with pyinstaller, the script will need to be feed to pyinstaller on a computer of each operating system.  That is its major limitation.  However once, completed, you\'ll have a single file that can be dropped onto any guest computer and run to add your wifi to a guest computer.  Realistically speaking this isn\'t the most practical thing, but if you have a complex password or need to setup wifi onto a large number of computers like in a business environment.  This type of solution can be quite handy.
         
 ####--register-wifi.py--
+
 ```python
 #!/usr/bin/env python3
 
@@ -180,7 +188,4 @@ else
 ```
 
 [Github Repo](https://github.com/besmith43/Py_RegisterWifi)
-
-
-
 
