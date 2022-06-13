@@ -17,6 +17,10 @@ As an IDE (or Integrated Development Environment), it is endlessly customizable.
 
 As you get better, the answer is most certainly yes.  However, that will take some time to achieve.  I'll use myself as an example.  I've been using vim on and off for the last 4 years.  I'm learning new things all the time and have achieved various levels of speed increases during that time.  Though I'm still very much new to the whole thing at the end of the day.  So far I've got vim configured pretty much on par or better than any IDE that I've tried, vifm (aka vim file manager) in the extreme early stages of adaption, and vimari (vim like extension for Safari) and vimium (another vim  like extension for Chrome, Firefox, and Edge).  The only missing application to get the vim treatment is my email client but as Apple's mail app and Outlook are rather large applications in their own rights, I don't think I'm going to try and shoehorn in vim keybindings into them.
 
+#### Applying Vim to other Applications
+
+If you're on Linux, it's quite common to have a terminal application call vim, or another terminal editor based on your settings, to modify text.  Sometimes the text is a bash command like zsh shell's vim-mode or writting an email with mutt, a terminal email client.  However outside of the terminal, it's quite common to find vim shortcut plugins for things like web browsers, and gui code editors, like Visual Studio and Jetbrain's line of IDE products.  I personally use Vimari on Safari and Vimium on Microsoft Edge to navigate through web pages without ever needing to touch my mouse.  It doesn't work on every website, but it does allow me to be faster or just not moving my hands away from the keyboard.
+
 #### Concluding Thoughts
 
 I encourage you to watch some videos on youtube and get a feel for how it works.  Once you get over the beginning stages, it can be a work life changing experience.  I just realized that I forgot about the macro system entirely, but that's alright because I entend to have more posts discussing vim, so you'll just have to what and see how that works.
