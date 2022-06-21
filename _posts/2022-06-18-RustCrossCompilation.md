@@ -189,3 +189,5 @@ Enjoy your new found knowledge of Rust!
 
 [Stack Overflow: how can i cross compile rust code into intel assembly on an arm m1 apple silicon](https://stackoverflow.com/questions/68139162/how-can-i-cross-compile-rust-code-into-intel-assembly-on-an-arm-m1-apple-silicon)
 
+[Patrik Svensson: targeting arm for windows in rust](https://patriksvensson.se/posts/2020/05/targeting-arm-for-windows-in-rust)
+
