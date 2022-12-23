@@ -1,0 +1,9 @@
+this is for jotting down ideas with potential to be blog posts
+
+_ rust basics
+
+_ ubuntu topics (like sssd)
+
+_ 
+
+
