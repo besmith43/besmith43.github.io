@@ -22,7 +22,7 @@ Firstly we'll need to get rustup install on our MacBook.  This can be done by go
 Now that we have Rustup installed, let's look at the simplest target for cross compiling our rust programs, Intel equipped Macs.  First we'll need to install the rust toolchain for it with the following command:
 
 ```bash
-rustup add target x86_64-apple-darwin
+rustup target add x86_64-apple-darwin
 ```
 
 Now we have everything installed, and we just need to tell cargo to use the new tooling.  To do so for each build run cargo like so:
